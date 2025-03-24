@@ -120,7 +120,7 @@ This is a web-based platform for managing a NAV-based crypto index fund. Users c
 
 ---
 
-## ✅ Optional Enhancements
+## ✅ Recommended Enhancements
 - User notifications (email or in-app)
 - Admin approvals for large withdrawals
 - Fee system (frontend + backend + accounting)
