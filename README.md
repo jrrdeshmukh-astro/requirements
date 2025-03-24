@@ -26,12 +26,12 @@ This is a web-based platform for managing a NAV-based crypto index fund. Users c
 
 ---
 
-### 3. 💸 **Fiat Withdrawal (Redemption)**
+### 3. 💸 **Fiat Withdrawal (Redemption via Transak)**
 - Users initiate withdrawal in USD
 - System burns units (calculated via latest NAV)
-- Fireblocks sends USDC to a Stripe-compatible address
-- Stripe payout to user's bank account or card
-- Logs redemption with metadata (amount, fees, timestamps)
+- Fireblocks sends USDC to a Transak-compatible wallet
+- Transak off-ramps USDC to user's bank account
+- Logs redemption with metadata (amount, fees, timestamps, Transak payout ID)
 
 ---
 
@@ -107,7 +107,7 @@ This is a web-based platform for managing a NAV-based crypto index fund. Users c
 | units | float | Units burned |
 | nav_used | float | NAV at time of redemption |
 | fireblocks_tx_id | string | Transaction ID for transfer |
-| stripe_payout_id | string | Payout ID |
+| transak_order_id | string | Transak order ID for off-ramp |
 | status | string | pending / completed / failed |
 
 ---
@@ -125,6 +125,3 @@ This is a web-based platform for managing a NAV-based crypto index fund. Users c
 - Admin approvals for large withdrawals
 - Fee system (frontend + backend + accounting)
 - Historical portfolio performance charts
-
----
-
