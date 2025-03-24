@@ -1,9 +1,3 @@
-Got it — since the fund is **not tokenized**, we’ll revise the scope accordingly to reflect a traditional NAV-based accounting system without token issuance or smart contract integration.
-
-Here’s the **updated version of the Requirement Document**:
-
----
-
 # 📄 Crypto Fund Manager – Technical Requirement Document (Non-Tokenized)
 
 ## 🧩 Overview
@@ -133,6 +127,4 @@ This is a web-based platform for managing a NAV-based crypto index fund. Users c
 - Historical portfolio performance charts
 
 ---
-
-Let me know if you'd like this turned into a **Job Description**, or want to break it down further per feature/module for hiring.
 
