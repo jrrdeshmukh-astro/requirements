@@ -70,6 +70,18 @@ This is a web-based platform for managing a NAV-based crypto index fund. Users c
 
 ---
 
+### 8. 🔁 **Systematic Investment Plan (SIP) Support**
+- Allow users to set recurring fiat investments
+- SIP UI to define:
+  - Amount
+  - Frequency (weekly, monthly)
+  - Start date
+- SIP cron job triggers Stripe Onramp sessions based on schedule
+- After USDC arrival, triggers NAV fetch, unit allocation, ledger update
+- Adds entries to `investment_log` with `is_sip = true`
+
+---
+
 ## 🧾 Database Tables
 
 ### `user_units`
@@ -102,6 +114,18 @@ This is a web-based platform for managing a NAV-based crypto index fund. Users c
 | fireblocks_tx_id | string | Transfer ID from Stripe/treasury |
 | stripe_session_id | string | Original Stripe/Onramp session ID |
 | status | string | pending / completed / failed |
+| is_sip | boolean | True if triggered via SIP |
+
+### `sip_schedule`
+| Field | Type | Description |
+|--|--|--|
+| email | string | User identifier |
+| amount_usd | float | Recurring investment amount |
+| frequency | string | daily / weekly / monthly |
+| next_run | timestamp | When the next SIP should trigger |
+| status | string | active / paused / cancelled |
+| created_at | timestamp | When SIP was created |
+| updated_at | timestamp | Last updated timestamp |
 
 ### `nav_history`
 | Field | Type | Description |
@@ -129,6 +153,7 @@ This is a web-based platform for managing a NAV-based crypto index fund. Users c
 |--|--|--|
 | NAV Updater | Daily | Computes NAV and logs to DB |
 | Rebalancer | Hourly | Checks and rebalances portfolio if needed |
+| SIP Processor | Hourly | Runs SIPs due by current time and initiates Stripe flow |
 
 ---
 
