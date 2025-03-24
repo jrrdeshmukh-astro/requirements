@@ -91,6 +91,18 @@ This is a web-based platform for managing a NAV-based crypto index fund. Users c
 | fireblocks_tx_id | string | Related Fireblocks transaction |
 | timestamp | timestamp | When investment was logged |
 
+### `investment_log`
+| Field | Type | Description |
+|--|--|--|
+| email | string | User email |
+| timestamp | timestamp | When investment occurred |
+| amount_usd | float | Total amount invested |
+| units | float | Units credited |
+| nav | float | NAV at time of investment |
+| fireblocks_tx_id | string | Transfer ID from Stripe/treasury |
+| stripe_session_id | string | Original Stripe/Onramp session ID |
+| status | string | pending / completed / failed |
+
 ### `nav_history`
 | Field | Type | Description |
 |--|--|--|
