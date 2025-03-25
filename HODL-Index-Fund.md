@@ -1,4 +1,4 @@
-```md
+
 # Dollar-Cost Averaging with Rebalancing Strategy for Cryptocurrencies
 
 This document outlines a strategy that combines Dollar-Cost Averaging (DCA) with periodic rebalancing to invest in cryptocurrencies—specifically Bitcoin and Litecoin. The approach also compares a rebalanced portfolio with a non‐rebalanced (buy‐and‐hold) benchmark and computes several performance metrics, including annualized return (IRR), Sharpe ratio, max drawdown, and tracking error.
@@ -182,4 +182,4 @@ By combining Dollar-Cost Averaging and periodic rebalancing, this strategy aims 
 - [Dollar-Cost Averaging Overview](https://www.investopedia.com/terms/d/dollarcostaveraging.asp)
 - [Portfolio Rebalancing](https://www.investopedia.com/terms/r/rebalancing.asp)
 - [Sharpe Ratio](https://www.investopedia.com/terms/s/sharperatio.asp)
-```
+
