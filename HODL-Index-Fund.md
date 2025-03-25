@@ -97,16 +97,10 @@ A parallel simulation of a buy-and-hold (non-rebalanced) portfolio is implemente
 ### Annualized Return (IRR)
 
 The annualized return is computed using the Internal Rate of Return (IRR) based on the daily cash flows.  
-\[
-\text{Annualized Return} = \left(1 + \text{IRR}_{\text{daily}}\right)^{365} - 1
-\]
 
 ### Sharpe Ratio
 
 Calculated using daily returns of the rebalanced portfolio, assuming a 0% risk-free rate.  
-\[
-\text{Sharpe Ratio} = \frac{\text{Average Daily Return}}{\text{Std. Dev. of Daily Returns}} \times \sqrt{365}
-\]
 
 ### Maximum Drawdown
 
@@ -115,11 +109,7 @@ The largest percentage drop from a historical peak in the portfolio value, refle
 ### Tracking Error
 
 Annualized standard deviation of the difference between the rebalanced portfolio’s daily returns and the non-rebalanced portfolio’s daily returns.  
-```latex
-\[
-\text{Tracking Error} = \sqrt{365} \times \sigma\left(R_{\text{rebalanced}} - R_{\text{non-rebalanced}}\right)
-\]
-```
+
 ---
 
 ## Implementation
