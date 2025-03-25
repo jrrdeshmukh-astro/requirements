@@ -115,10 +115,11 @@ The largest percentage drop from a historical peak in the portfolio value, refle
 ### Tracking Error
 
 Annualized standard deviation of the difference between the rebalanced portfolio’s daily returns and the non-rebalanced portfolio’s daily returns.  
+```latex
 \[
 \text{Tracking Error} = \sqrt{365} \times \sigma\left(R_{\text{rebalanced}} - R_{\text{non-rebalanced}}\right)
 \]
-
+```
 ---
 
 ## Implementation
