@@ -12,7 +12,7 @@ This is a web-based platform for managing a NAV-based crypto index fund. Users c
 - Simple JWT-based auth
 - Email used as unique identifier
 - Support for admin and user roles
-- Optional: KYC status tracking (via Sumsub or Persona)
+- KYC status tracking (via Sumsub or Persona)
 
 ---
 
