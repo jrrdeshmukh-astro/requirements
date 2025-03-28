@@ -124,5 +124,3 @@ This could be delivered as:
 - **Live onboarding** for institutions.
 
 ---
-
-If you'd like, I can help you convert this into an investor/product deck or onboarding guide too.
