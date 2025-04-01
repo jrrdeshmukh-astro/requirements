@@ -1,7 +1,3 @@
-Here’s the **research-style Q&A description** of **AutoTrader Maximus**, directly referencing the functionality, logic, and architecture in your codebase:
-
----
-
 ### 🔍 **AutoTrader Maximus – Research Q&A Overview**
 
 ---
@@ -171,5 +167,3 @@ Long-term, AutoTrader Maximus could evolve into a **self-improving trading agent
 This aligns with **emergent intelligence in financial systems**, a step closer to AGI-powered economics.
 
 ---
-
-Let me know if you’d like this compiled into a downloadable whitepaper or integrated into your product documentation or pitch materials!
